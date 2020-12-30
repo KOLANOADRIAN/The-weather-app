@@ -1,0 +1,15 @@
+.section__img{
+    width: 500px;
+    height: 500px;
+    background-image: url(../pl_foto.png);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+}
+.container__result {
+    line-height: 1.8;
+    color: rgb(94, 89, 99);
+}
+
