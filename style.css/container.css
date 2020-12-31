@@ -4,34 +4,69 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    
+  
+}
+
+.container__caption {
     position: relative;
+   
 }
 .caption-one {
     position: absolute;
     top: 0;
     left: 0;
-    color: brown;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    animation: next 12s 0s infinite;
+     
+    
 }
 
-.cacaption-two {
+.caption-two {
     position: absolute;
     top: 0;
     left: 0;
-    color: darkblue;
-   
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    animation: next 12s 4s infinite;
 }
+
+@keyframes next {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .container__midle {
+    position: absolute;
+    top: 150px;
     display: flex;
 }
 
 .section__img{
     width: 300px;
     height: 300px;
-    background-image: url(../pl_foto.png);
+    background-image: url(../mapaPolski.jpg);
     background-size: cover;
+    margin: 50px;
 }
 
-
+.container-form {
+    margin: 50px;
+    align-items: center;
+}
 .container__result {
     line-height: 1.8;
     color: rgb(94, 89, 99);
