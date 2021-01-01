@@ -1,0 +1,42 @@
+
+
+.container__result {
+    margin-top: 50px;
+    line-height: 1.8;
+    color: rgb(94, 89, 99);
+    width: 30%;
+}
+
+.stacja {
+    position: absolute;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-name: fromLeft;
+}
+
+@keyframes fromLeft {
+    0% {
+        left: 50px;
+        transform:scale(0.2);
+        
+    }
+    100% {
+        left: 800px;
+        transform:scale(1.2)
+    }
+}
+
+@media (max-width:887px) {
+    @keyframes fromLeft {
+        0% {
+            top: 50px;
+            transform:scale(0.2);
+            
+        }
+        100% {
+            top: 500px;
+            transform:scale(1.2)
+        }
+    }
+
+}

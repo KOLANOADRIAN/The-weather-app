@@ -4,14 +4,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    
   
     
   
 }
-
 .container__caption {
     position: relative;
-   
 }
 .caption-one {
     position: absolute;
@@ -22,7 +21,6 @@
     text-align: center;
     animation: next 12s 0s infinite;
      
-    
 }
 
 .caption-two {
@@ -47,46 +45,5 @@
     }
     100% {
         opacity: 1;
-    }
-}
-
-.container__midle {
-    max-width: 1200px;
-    width: 100%;
-    position: absolute;
-    top: 150px;
-    display: flex;
-}
-
-.section__img{
-    width: 300px;
-    height: 300px;
-    background-image: url(../mapaPolski.jpg);
-    background-size: cover;
-    margin: 50px;
-}
-
-.container-form {
-    margin: 50px;
-    align-items: center;
-}
-.container__result {
-    line-height: 1.8;
-    color: rgb(94, 89, 99);
-}
-
-.stacja {
-    position: absolute;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-name: fromLeft;
-}
-
-@keyframes fromLeft {
-    0% {
-        left: -150px;
-    }
-    100% {
-        left: 800px;
     }
 }
