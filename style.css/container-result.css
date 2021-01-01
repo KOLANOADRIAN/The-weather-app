@@ -1,10 +1,9 @@
 
-
 .container__result {
     margin-top: 50px;
     line-height: 1.8;
     color: rgb(94, 89, 99);
-    width: 30%;
+   
 }
 
 .stacja {
@@ -12,6 +11,12 @@
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-name: fromLeft;
+}
+@media (max-width:887px) {
+    .stacja {
+        margin-top: 30px;
+        text-align: justify;
+    }
 }
 
 @keyframes fromLeft {
