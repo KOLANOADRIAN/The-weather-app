@@ -27,7 +27,8 @@ const getAPI = (event) => {
     <span class="wilgotność"> Wilgotność: ${rezultat.wilgotnosc_wzgledna}<span><br>
     <span class="prędkość"> Prędkość wiatru: ${rezultat.predkosc_wiatru}<span>
     `)
-    if (rezultat.temperatura < 1) {
+    const temp = rezultat.temperatura;
+    if (temp < 1) {
         console.log("jest mniej niż 1")
      }
     })

@@ -34,12 +34,14 @@
 @media (max-width:887px) {
     @keyframes fromLeft {
         0% {
+            
             top: 50px;
             transform:scale(0.2);
             
         }
         100% {
-            top: 500px;
+            
+            top: 50px;
             transform:scale(1.2)
         }
     }
