@@ -1,9 +1,13 @@
+const sayHello = () => {
+    console.log("Hello FrondEnd__Dewelopers")
+}
+sayHello();
+
 const getAPI = (event) => {
     event.preventDefault();
     const container__result = document.querySelector(".container__result")
     const meteoNumber = document.querySelector('[name = "select__city"]').value;
     const url = `https://danepubliczne.imgw.pl/api/data/synop/id/${meteoNumber}`;
-    // const url = `https://danepubliczne.imgw.pl/api/data/synop`;
     fetch(url)
         .then((answer) => {
             console.log(answer)
@@ -16,7 +20,7 @@ const getAPI = (event) => {
         .then((json) => {
             let rezultat = json;
             console.log(rezultat),
-           
+    
             container__result.innerHTML = (`
     <span class="stacja"> Stacja: ${rezultat.stacja}<span><br>
     <span class="data"> Data Pomiaru:  ${rezultat.data_pomiaru}<span><br>
@@ -28,8 +32,11 @@ const getAPI = (event) => {
     <span class="prędkość"> Prędkość wiatru: ${rezultat.predkosc_wiatru}<span>
     `)
     const temp = rezultat.temperatura;
-    if (temp < 1) {
-        console.log("jest mniej niż 1")
+    if (temp < 0) {
+        console.log("Temperatura poniżej 0")
+     }
+     else {
+        console.log("Temperatura powyżej 0")
      }
     })
     .catch((error) => console.log(error, "błąd"));    
