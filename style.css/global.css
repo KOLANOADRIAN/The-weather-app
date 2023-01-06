@@ -1,9 +1,10 @@
 *,
-*::after,
-::before {
+* 
+::before,
+::after {
     box-sizing: border-box;
-    scroll-behavior: smooth; /*płynne przewijanie strony*/
 }
+
 body {
     position: relative;
 }

@@ -6,16 +6,16 @@
     top: 150px;
     display: flex;
     flex-direction: row;
-    
 }
+
 @media (max-width:887px) {
     .container__midle {
         flex-direction: column;
         align-items: center; 
         box-shadow: none;
-      
     }
 }
+
 .section__img{
     width: 100%;
     max-width: 300px;
@@ -24,6 +24,7 @@
     background-size: cover;
     margin: 50px;
 }
+
 @media (max-width:887px) {
     .section__img {
         margin-left: auto;

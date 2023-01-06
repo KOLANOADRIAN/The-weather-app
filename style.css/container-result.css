@@ -22,8 +22,7 @@
 @keyframes fromLeft {
     0% {
         left: 50px;
-        transform:scale(0.2);
-        
+        transform:scale(0.2);  
     }
     100% {
         left: 800px;
@@ -37,7 +36,6 @@
             top: 50px;
             left: 20px;
             transform:scale(0.1);
-            
         }
         100% {
             
@@ -46,5 +44,4 @@
             transform:scale(1.2)
         }
     }
-
 }
